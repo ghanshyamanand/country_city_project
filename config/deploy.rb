@@ -37,16 +37,39 @@
 
 
 
+lock '3.6.1'
+
+# set :application, 'country_city_project'
+# set :repo_url, 'https://github.com/ghanshyamanand/country_city_project.git'
+
+# ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
+
+# set :use_sudo, false
+# set :bundle_binstubs, nil
+# set :linked_files, fetch(:linked_files, []).push('config/database.yml')
+# set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
+
+# after 'deploy:publishing', 'deploy:restart'
+
+# namespace :deploy do
+#   task :restart do
+#     invoke 'unicorn:reload'
+#   end
+# end
+
+
+
+
 
 # -------------------------- Interakt code
 
 
-set :stages, %w(production)     #various environments
-# load "deploy/assets"                    #precompile all the css, js and images... before deployment..
-require 'bundler/capistrano'            # install all the new missing plugins...
-require 'capistrano/ext/multistage'     # deploy on all the servers..
+# set :stages, %w(production)     #various environments
+# # load "deploy/assets"                    #precompile all the css, js and images... before deployment..
+# require 'bundler/capistrano'            # install all the new missing plugins...
+# require 'capistrano/ext/multistage'     # deploy on all the servers..
 require 'rvm/capistrano'                # if you are using rvm on your server..
-require './config/boot'
+# require './config/boot'
 
 # till now no need, may need in future
 # require 'capistrano/sidekiq'
