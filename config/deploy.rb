@@ -42,7 +42,7 @@
 
 
 set :stages, %w(production)     #various environments
-load "deploy/assets"                    #precompile all the css, js and images... before deployment..
+# load "deploy/assets"                    #precompile all the css, js and images... before deployment..
 require 'bundler/capistrano'            # install all the new missing plugins...
 require 'capistrano/ext/multistage'     # deploy on all the servers..
 require 'rvm/capistrano'                # if you are using rvm on your server..
