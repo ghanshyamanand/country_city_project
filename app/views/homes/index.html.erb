@@ -1,0 +1,7 @@
+<label>Select Country</label>
+<%= select_tag "country", options_for_select( @countries.collect{|x| [x.name,x.id]} ), :prompt => "Select Country", :id => "country_select_tag" %>
+
+
+<br><br><br>
+<label>Select City</label>
+<%= select_tag "city", :id => "city_select_tag" %>
