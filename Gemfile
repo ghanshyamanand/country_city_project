@@ -69,18 +69,18 @@ end
 ## GO-RAILS part
 # gem 'capistrano', '~> 3.1.0'
 
-group :development do
-  gem "capistrano", "~> 3.6"
-end
+# group :development do
+#   gem "capistrano", "~> 3.6"
+# end
 
-gem 'capistrano-bundler', '~> 1.1.2'
-gem 'capistrano-rails', '~> 1.1.1'
+# gem 'capistrano-bundler', '~> 1.1.2'
+# gem 'capistrano-rails', '~> 1.1.1'
 
-# # Add this if you're using rbenv
-# # gem 'capistrano-rbenv', github: "capistrano/rbenv"
+# # # Add this if you're using rbenv
+# # # gem 'capistrano-rbenv', github: "capistrano/rbenv"
 
-# # Add this if you're using rvm
-gem 'capistrano-rvm', github: "capistrano/rvm"
+# # # Add this if you're using rvm
+# gem 'capistrano-rvm', github: "capistrano/rvm"
 
 ## Peeyush Singla part from github
 # group :development do
@@ -97,3 +97,15 @@ gem 'capistrano-rvm', github: "capistrano/rvm"
 # group :development, :test do
 #   gem 'capistrano-sidekiq'
 # end
+
+
+gem 'capistrano', '~> 3.0', require: false, group: :development
+
+group :development do
+  gem 'capistrano-rails',   '~> 1.1', require: false
+  gem 'capistrano-bundler', '~> 1.1', require: false
+end
+
+group :development do
+  gem 'capistrano-rvm',   '~> 0.1', require: false
+end

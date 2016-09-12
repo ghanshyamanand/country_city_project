@@ -1,30 +1,3 @@
-# tasty tab code
-set :branch, "master"
-set :rails_env, "production"
-
-
-# Interakt Code
-
-# set :branch, "master"
-# set :rails_env, "production"
-
-# # role :app, '188.166.242.86', '119.81.164.18', '128.199.221.159'
-# # role :web, '188.166.242.86', '119.81.164.18', '128.199.221.159'
-# # role :db, '188.166.242.86', :primary => true
-
-# role :app, '188.166.242.86', '128.199.221.159'
-# role :web, '188.166.242.86', '128.199.221.159'
-# role :db, '188.166.242.86', :primary => true
-
-# # set :branch, "master"
-# # set :rails_env, "production"
-
-# # role :app, '188.166.242.86'
-# # role :web, '188.166.242.86'
-# # role :db, '188.166.242.86', :primary => true
-
-
-
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
